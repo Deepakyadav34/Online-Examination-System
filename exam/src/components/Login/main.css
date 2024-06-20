@@ -1,0 +1,42 @@
+
+
+  
+  h1 {
+    color: #f5efef;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  p {
+    color: #f6f1f1;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  h1 {
+    color: #f5efef;
+    font-size: 3rem;
+    text-align: center;
+  }
+  h3 {
+    color: #f5efef;
+    font-size: 1.5rem;
+  }
+  p {
+    color: #f6f1f1;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .cc{
+    text-align: center;
+  }

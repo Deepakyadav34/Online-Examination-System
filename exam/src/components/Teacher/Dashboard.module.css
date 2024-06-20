@@ -1,0 +1,115 @@
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #343a40;
+  color: #f8f9fa;
+  transition: width 0.3s, left 0.3s;
+  overflow-x: hidden;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Header */
+.sidebar h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #f8f9fa;
+}
+
+/* Menu List */
+.menuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Menu Items */
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #f8f9fa;
+  font-size: 16px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.menuItem:hover, .menuItem:focus {
+  background-color: #495057;
+  border-radius: 5px;
+}
+
+.menuItem svg {
+  margin-right: 10px;
+}
+
+/* Icon Colors */
+.monitoringIcon {
+  color: #ff6347; /* Tomato */
+}
+
+.scheduleIcon {
+  color: #4682b4; /* SteelBlue */
+}
+
+.noticesIcon {
+  color: #32cd32; /* LimeGreen */
+}
+
+.mcqIcon {
+  color: #ffa500; /* Orange */
+}
+
+.codingIcon {
+  color: #9370db; /* MediumPurple */
+}
+
+.addResultIcon {
+  color: #ff1493; /* DeepPink */
+}
+
+.submitIcon {
+  color: #20b2aa; /* LightSeaGreen */
+}
+
+/* Result Input */
+.result {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.result input {
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Error Message */
+.errorMessage {
+  color: red;
+}
+
+/* Students List */
+.studentsList {
+  padding-left: 0;
+}
+
+.studentsList li {
+  padding: 5px 0;
+}

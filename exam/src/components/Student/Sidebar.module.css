@@ -1,0 +1,105 @@
+/* Sidebar.module.css */
+
+.sidebarContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #343a40;
+}
+
+.sidebarBox {
+  width: 300px;
+  background-color: #343a40;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h2 svg {
+  margin-right: 0.5rem;
+}
+
+.studentDetails {
+  margin-bottom: 1rem;
+}
+
+.studentDetails p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.studentDetails p svg {
+  margin-right: 0.5rem;
+}
+
+.examList, .menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.examList li, .menuList li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #e7e7e7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.examList li:hover, .menuList li:hover {
+  background-color: #3d3d3d;
+}
+
+.examList li svg, .menuList li svg {
+  margin-right: 0.5rem;
+}
+
+.notices {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.notices ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notices li {
+  margin-bottom: 1rem;
+}
+
+.notices li strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.notices li small {
+  display: block;
+  color: #666;
+  font-size: 14px;
+}

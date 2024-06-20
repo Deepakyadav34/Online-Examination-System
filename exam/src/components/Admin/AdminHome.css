@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.admin-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.admin-card {
+  /* flex: 1 1 calc(50% - 20px); */
+  width: 230px;
+
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #00b4db, #0083b0);
+  /* Yellow color for Register Teacher card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card:nth-child(2) {
+  background: linear-gradient(to bottom right, #9d50bb, #6e48aa);
+  /* Turquoise color for Active Teacher card */
+}
+
+.admin-card:nth-child(3) {
+  background: linear-gradient(to bottom right, #ff6e7f, #bfe9ff);
+  /* Pink color for Register Student card */
+}
+
+.admin-card:nth-child(4) {
+  background: linear-gradient(to bottom right, #ffefba, #ffffff);
+  /* Blue color for Active Student card */
+}
+
+.graphs {
+  display: flex;
+
+  width: 1000px;
+  
+  
+}
+
+.graph {
+  
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.new:hover{
+  color: black;
+
+}

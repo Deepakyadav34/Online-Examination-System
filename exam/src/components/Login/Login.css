@@ -1,0 +1,106 @@
+.auth-container {
+  display: flex;
+  height: 100vh;
+  border-radius: 40px;
+}
+
+.auth-image {
+  flex: 1; /* Take up remaining space */
+  border-radius: 5px;
+  background: url('C:\Users\deepa\Downloads\Online Examination System\Exam\exam\src\components\Login\loginimage.jpg');
+  background-size: cover;
+  /* Add some shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.auth-form {
+  width: 35%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+  /* Add some shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-heading {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #360b77; /* Purple background color */
+}
+
+button:hover {
+  background-color: #6a0dad; /* Darker shade of purple on hover */
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-form {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.captcha {
+  font-size: 1em; /* Adjust font size */
+  font-weight: bold;
+  background: #a19999;
+  flex: 1; /* Take up remaining space */
+  padding: 10px; /* Adjust padding */
+  border-radius: 4px;
+  margin-right: 10px; /* Add margin to separate captcha from button */
+}
+
+.captcha-container button {
+  padding: 10px; /* Adjust padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #235dd1; /* Purple background color */
+  color: white;
+  width: auto; /* Adjust width to auto */
+}
+
+.captcha-container button:hover {
+  background-color: #6a0dad; /* Darker shade of purple on hover */
+}
+
+.input-container {
+  flex: 1; /* Take up remaining space */
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px; /* Adjust padding */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

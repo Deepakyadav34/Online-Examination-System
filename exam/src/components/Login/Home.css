@@ -1,0 +1,68 @@
+.Home {
+    text-align: center;
+    background: url('C:\Users\91727\OneDrive\Desktop\Exam\exam\src\components\Login\Heloo.webp');
+  }
+
+  
+  .navbar {
+    background-color: #0f5aa5;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    
+    color: black;
+  }
+  
+  .Home-header {
+    padding-top: 100px; 
+    background-color: #282c34;
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .instructions-box {
+    background-color:rgb(214, 212, 212);
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #090303;
+    border-radius: 5px;
+    width: 50%;
+    text-align: left;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .instructions-box h2 {
+    color: #333;
+  }
+  
+  .login-options {
+    margin-top: 20px;
+  }
+  
+  .login-button {
+    width: 200px;
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }

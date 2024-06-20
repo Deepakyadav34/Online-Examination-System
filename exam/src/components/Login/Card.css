@@ -1,0 +1,257 @@
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+  color: #f8f5f5;
+  margin-bottom: 2rem;
+}
+
+.user-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 1vw;
+}
+
+.card {
+  margin-top: 5vh;
+  border-color: black;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 17vw;
+  height: 20vw;
+  border: 1px solid #090202;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(4, 2, 2, 0.3);
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgba(248, 244, 244, 0.5);
+  color: #0d0606;
+  text-align: center;
+  font-size: 14px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 5px 10px rgb(229, 226, 226);
+  transform: scale(1.10);
+}
+
+.card h2 {
+  margin: 10px 0 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+
+.admin,
+.student,
+.teacher {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.admin { background-image: url('C:\Users\deepa\Downloads\Online Examination System\Exam\exam\src\components\Login\Ai.webp'); }
+.student { background-image: url('C:\Users\deepa\Downloads\Online Examination System\Exam\exam\src\components\Login\Student.webp'); }
+.teacher { background-image: url('C:\Users\deepa\Downloads\Online Examination System\Exam\exam\src\components\Login\Teachers.webp'); }
+
+.selected {
+  border-color: #4d90fe;
+  box-shadow: 0 5px 10px rgba(77, 144, 254, 0.3);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  z-index: 0;
+  transition: all 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.card:hover::before,
+.card:focus::before {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: auto;
+    height: auto;
+  }
+  .card h2 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 104px) {
+  .card {
+    width: 50%;
+    height: auto;
+  }
+  .card h2 {
+    font-size: 19px;
+  }
+}
+
+.navbar {
+  background-color:rgb(6, 1, 17); /* Navy blue */
+  padding: 15px 0; /* Add some padding for better spacing */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1300px;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  /* padding: 10px 15px; */
+  /* border-radius: 5px; */
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* .nav-links li a:hover {
+  background-color: #2c3e50; 
+} */
+
+.footer {
+  font: bold;
+  color: #f3f0f0;
+  text-align: center;
+  /* padding: 20px; */
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #9e61fb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+  z-index: 10; /* Ensure this is higher than particles container */
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure this is lower than your text container */
+}
+
+h1 {
+  font-weight: 100;
+  text-align: center;
+  color: #f8f5f5;
+  margin-bottom: 2rem;
+  z-index: 20; /* Higher z-index to ensure it appears above particles */
+  position: relative; /* To respect the z-index */
+}
+
+.user-cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  padding: 1vw;
+  z-index: 20; /* Higher z-index to ensure it appears above particles */
+  position: relative; /* To respect the z-index */
+}
+
+.card {
+  margin-top: 5vh;
+  border-color:white;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 17vw;
+  height: 20vw;
+  border: 1px solid #090202;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(4, 2, 2, 0.3);
+  z-index: 20; /* Higher z-index to ensure it appears above particles */
+}
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+

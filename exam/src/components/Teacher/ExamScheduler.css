@@ -1,0 +1,58 @@
+.examScheduler {
+  font-family: Arial, sans-serif;
+}
+
+.examScheduler h1, .examScheduler h2 {
+  color: #333;
+}
+
+.examScheduler form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.examScheduler form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.examScheduler form input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.examScheduler form button {
+  padding: 10px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.examScheduler ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.examScheduler ul li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #f9f9f9;
+}
+
+.examScheduler ul li button {
+  padding: 5px 10px;
+  background: #f44336;
+  color: #080505;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

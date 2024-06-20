@@ -1,0 +1,149 @@
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .main-content {
+   
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    border-radius: 8px;
+    margin-left: 100px;
+  }
+  
+  .webcam-container {
+    display: flex;
+    float:right;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    color: #333;
+    text-align: center;
+  }
+  
+
+  .sidebar {
+    display: none; 
+  }
+  
+ 
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  li {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  input[type="radio"] {
+    margin-right: 10px; 
+    cursor: pointer;
+  }
+  
+  
+  li:hover {
+    background-color: #e9e9e9;
+  }
+  
+  li.attempted, .question-circle.attempted {
+    border-color: blue;
+    background-color: blue;
+    color: white;
+  }
+  
+  li.active, .question-circle.active {
+    border-color: #009688;
+    background-color: #009688;
+    color: white;
+  }
+  
+  .question-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-right: 5px;
+  }
+
+  .buttons-container {
+    display: flex;  
+    justify-content: center;  
+    flex-wrap: nowrap;  
+    gap: 10px;  
+}
+  
+  /* Buttons */
+  button:hover {
+    background-color: #00796b;
+  }
+  
+  /* Modal Styles */
+  .warning-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .warning-modal p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .warning-modal button {
+    width: 100%;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      padding: 10px;
+      overflow: auto;
+    }
+  
+    .sidebar ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-gap: 10px;
+    }
+  
+    .main-content {
+      width: calc(100% - 220px); 
+    }
+  }
+  

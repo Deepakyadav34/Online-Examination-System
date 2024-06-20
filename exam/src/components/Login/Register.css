@@ -1,0 +1,57 @@
+.container-demo {
+  padding: 20px; /* Add padding inside the container */
+  width: 400px; /* Set the width of the container */
+  margin: auto; /* Center the container horizontally */
+  background-color: white; /* Set the background color */
+  border-radius: 10px; /* Round the corners */
+  margin-top: 100px; /* Add space above the container */
+  height: auto; /* Set the height of the container */
+}
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    input, select, button {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      width: 90%;
+    }
+  
+    input, select, button {
+      font-size: 14px;
+    }
+  }
+  #particles canvas {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
